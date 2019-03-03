@@ -66,7 +66,7 @@ upload() {
   fi
 
   case "$REPO" in
-    development|testing)
+    development|testing|nomad-desktop-dev|nomad-desktop)
       if [ -z "$APTLY_USERNAME" -o -z "$APTLY_API_KEY" ]; then
         echo "Requires APTLY_USERNAME and APTLY_API_KEY to be set before uploading file"
         exit 1
